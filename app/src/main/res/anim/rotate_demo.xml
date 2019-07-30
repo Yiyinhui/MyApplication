@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator=
+        "@android:anim/accelerate_interpolator"
+    android:duration="1000"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:fromDegrees="0"
+    android:toDegrees="-1080">
+    <!--android:pivotX：旋转轴点的X坐标（其值可以为：数值、百分数、百分数p），-->
+    <!--例如：如50表示以当前View左上角坐标加50px为初始点、50%表示以当前View的左上角加上当前View宽高的50%做为初始点、50%p表示以当前View的左上角加上父控件宽高的50%做为初始点）-->
+    <!--android:pivotY：旋转轴点的Y坐标，规律同android:pivotX。-->
+    <!--android:fromDegrees：旋转开始的角度，其值可以为正负-->
+    <!--android:toDegrees：旋转结束的角度，其值可以为正负-->
+    <!--ps：toDegrees -fromDegrees > 0，则顺时针旋转；否则，逆时针旋转-->
+
+</rotate>

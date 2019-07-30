@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:duration="3000"
+    android:fromXDelta="0%"
+    android:fromYDelta="0%"
+    android:toXDelta="50%"
+    android:toYDelta="0%"
+    android:repeatMode="restart"
+    android:repeatCount="1">
+    <!--android:fromXDelta：平移开始X方向坐标（其值可以为：数值、百分数、百分数p，且多可以为正负），其值含义与android:pivotX类似-->
+    <!--android:fromYDelta：平移开始Y方向坐标（其值可以为：数值、百分数、百分数p，且多可以为正负），其值含义与android:pivotY类似-->
+    <!--android:toXDelta：平移结束X方向坐标（其值可以为：数值、百分数、百分数p，且多可以为正负），其值含义与android:pivotX类似-->
+    <!--android:toYDelta：平移结束Y方向坐标（其值可以为：数值、百分数、百分数p，且多可以为正负），其值含义与android:pivotY类似-->
+</translate>

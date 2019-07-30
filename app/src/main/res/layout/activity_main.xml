@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_close" />
+
+            <ImageView
+                android:id="@+id/animation"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@mipmap/image_child" />
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/phone86"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/editext_selector"
+                        android:enabled="false"
+                        android:paddingRight="10dp"
+                        android:text="手机号  +86"
+                        android:textColor="#000000" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="2px"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toRightOf="@id/phone86"
+                        android:background="@color/gray" />
+
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@+id/phone86"
+                        android:background="@drawable/editext_selector"
+                        android:enabled="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="123456"
+                        android:inputType="phone"
+                        android:paddingLeft="10dp" />
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/tick"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/ic_tick"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/cross"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/ic_cross"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="290dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/checktitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/editext_selector"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:text="验证码 "
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/checkcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_toRightOf="@+id/checktitle"
+                        android:background="@drawable/editext_selector"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:hint="  ||"
+                        android:inputType="text"
+                        android:maxLength="10" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/acquirecheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center|right"
+                    android:background="@drawable/btn_circle_shape_check"
+                    android:enabled="true"
+                    android:text="获取验证码"
+                    android:textSize="10sp" />
+
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="290dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_circle_shape"
+                android:text="登录"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/loginWithId"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_marginBottom="13dp"
+
+                android:text="账号密码登录"
+                android:textColor="#1296db"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="90dp"
+                android:text="未注册手机号登陆，将自动注册" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:text="第三方登录" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wechat"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/ic_wechat" />
+
+                <ImageView
+                    android:id="@+id/weibo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@mipmap/ic_qq" />
+
+                <ImageView
+                    android:id="@+id/qq"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@mipmap/ic_weibo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/xieyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="注册登录即代表同意4D书城用户协议" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
